@@ -1,0 +1,13 @@
+<div class="container">
+    <form #getForm="ngForm" (submit)="getData(getForm.value)">
+        <div class="form-group">
+          <label for="num">Please Enter your desired index no.</label>
+          <input type="number" class="form-control" name="number" value="num"  placeholder="Enter number" ngModel>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div>
+          <h3> The number for for index {{getNum}} is {{showNum}}</h3>
+      </div>
+</div>
