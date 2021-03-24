@@ -1,5 +1,9 @@
+<app-b [ParentData]="DisplayData"></app-b> 
+<app-a [ParentData]="DisplayData"></app-a>
+<app-c [ParentData]="DisplayData"></app-c>
+<app-d [ParentData]="DisplayData"></app-d>
 <div class="body">
     <div>
-        <h2>ABC 123</h2>
+        <input type="text" value="ABC 123" [(ngModel)]="DisplayData">
     </div>
 </div>

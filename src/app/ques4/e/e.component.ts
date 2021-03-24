@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./e.component.css']
 })
 export class EComponent implements OnInit {
+  public DisplayData: any;
 
   constructor() { }
 

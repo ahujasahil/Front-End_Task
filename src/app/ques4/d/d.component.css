@@ -1,9 +1,10 @@
 .body{
     background-color: black;
-    width: 78px;
     top:575px;
     float: right;
-    left: 206vh;
+    left: 170vh;
     position: absolute;
+    width: 300px;
+    height: 200px;
 
 }

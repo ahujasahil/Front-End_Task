@@ -1,10 +1,12 @@
 <div class="container">
     <form #getForm="ngForm" (submit)="getData(getForm.value)">
         <h3>X Component</h3>
-        <div class="form-group">
+        <div class="form-group" *ngFor="let obj of array">
           <label for="name">Edit Name</label>
           <input type="text" class="form-control" name="name" value="name"  placeholder="Enter Name" ngModel>
+          <button type="submit" class="btn btn-success">save</button>
         </div>
+        <span (click)="addForm()" class="btn btn-success">+</span>
         
         <button type="submit" class="btn btn-success">save</button>
         <div>
@@ -15,5 +17,5 @@
             
         </div>
       </form>
-      <app-y [data]="data"></app-y>
+      <!-- <app-y [data]="data"></app-y> -->
 </div>
