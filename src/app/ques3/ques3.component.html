@@ -1,13 +1,19 @@
 <div class="container">
-    
-    <form (ngSubmit)="onSubmit()">
-        <div class="form-group" *ngFor="let obj of array">
-          <label for="email">Add phone Number</label>
-          <input type="number" class="form-control" name="phone" placeholder="Please add your phn no." [(ngModel)]="obj.phone">
-        </div>
-        <span (click)="addForm()" class="btn btn-success">+</span>
-        
-        
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+  <div>
+    <h2 style="text-align: center;">
+      Question 3
+    </h2>
+  </div>
+  <form (ngSubmit)="onSubmit()">
+      <div class="form-group" *ngFor="let obj of array">
+        <label for="email">Add phone Number</label>
+        <input type="number" class="form-control" name="phone" placeholder="Please add your phn no." [(ngModel)]="obj.phone">
+      </div>
+      <span (click)="addForm()" class="btn btn-success">Alternate No.</span>
+      <br><br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div>
+      <small>Note: Please view Console for entered Phone No.s</small>
+    </div>
 </div>
